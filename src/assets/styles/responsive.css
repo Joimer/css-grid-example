@@ -1,0 +1,185 @@
+.blue {
+    background-color: #36F;
+}
+
+.red {
+    background-color: #F33;
+}
+
+.brown {
+    background-color: #A0522D;
+}
+
+.burgundy {
+    background-color: #800020;
+}
+
+.purple {
+    background-color: #572364;
+}   
+
+.turquoise {
+    background-color: #A0D6B4;
+}
+
+.forestgreen {
+    background-color: #709391;
+}
+
+.seablue {
+    background-color: #258;
+}
+
+.gray {
+    background-color: #464;
+}
+
+/**
+ * Grid for PC.
+ * A grid is use for ease of changing items around and updating it to look different for different screen sizes.
+ */
+ .grid { 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 1rem;
+    width: 100vw;
+    height: 100vh;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+/**
+ * Grid for mobile first, so it loads faster
+ */
+.box1 {
+    grid-column-start: 1;
+    grid-column-end: span 4;
+    grid-row-start: 1;
+    grid-row-end: span 1;
+}
+
+.box2 {
+    grid-column-start: 1;
+    grid-column-end: span 4;
+    grid-row-start: 3;
+    grid-row-end: span 1;
+}
+
+.box3 {
+    grid-column-start: 1;
+    grid-column-end: span 2;
+    grid-row-start: 2;
+    grid-row-end: span 1;
+}
+
+.box4 {
+    grid-column-start: 3;
+    grid-column-end: span 2;
+    grid-row-start: 2;
+    grid-row-end: span 1;
+}
+
+.box5 {
+    grid-column-start: 1;
+    grid-column-end: span 2;
+    grid-row-start: 5;
+    grid-row-end: span 1;
+}
+
+.box6 {
+    grid-column-start: 1;
+    grid-column-end: span 2;
+    grid-row-start: 6;
+    grid-row-end: span 1;
+}
+
+.box7 {
+    grid-column-start: 1;
+    grid-column-end: span 4;
+    grid-row-start: 4;
+    grid-row-end: span 1;
+}
+
+.box8 {
+    grid-column-start: 3;
+    grid-column-end: span 2;
+    grid-row-start: 5;
+    grid-row-end: span 1;
+}
+
+.box9 {
+    grid-column-start: 3;
+    grid-column-end: span 2;
+    grid-row-start: 6;
+    grid-row-end: span 1;
+}
+
+/**
+ * Grid items for PC
+ */
+ @media only screen and (min-width: 600px) {
+    .box1 {
+        grid-column-start: 1;
+        grid-column-end: span 2;
+        grid-row-start: 1;
+        grid-row-end: span 3;
+    }
+
+    .box2 {
+        grid-column-start: 3;
+        grid-column-end: span 2;
+        grid-row-start: 1;
+        grid-row-end: span 2;
+    }
+
+    .box3 {
+        grid-column-start: 3;
+        grid-column-end: span 1;
+        grid-row-start: 3;
+        grid-row-end: span 1;
+    }
+
+    .box4 {
+        grid-column-start: 4;
+        grid-column-end: span 1;
+        grid-row-start: 3;
+        grid-row-end: span 1;
+    }
+
+    .box5 {
+        grid-column-start: 1;
+        grid-column-end: span 1;
+        grid-row-start: 4;
+        grid-row-end: span 1;
+    }
+
+    .box6 {
+        grid-column-start: 1;
+        grid-column-end: span 1;
+        grid-row-start: 5;
+        grid-row-end: span 2;
+    }
+
+    .box7 {
+        grid-column-start: 2;
+        grid-column-end: span 2;
+        grid-row-start: 4;
+        grid-row-end: span 3;
+    }
+
+    .box8 {
+        grid-column-start: 4;
+        grid-column-end: span 1;
+        grid-row-start: 4;
+        grid-row-end: span 2;
+    }
+
+    .box9 {
+        grid-column-start: 4;
+        grid-column-end: span 1;
+        grid-row-start: 6;
+        grid-row-end: span 1;
+    }
+}
+    
